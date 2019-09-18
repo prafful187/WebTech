@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,29 +7,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CS05-demo</title>
     <style>
-        h1 {color:red}
+        /* h1 {color:red}
         p  {font-family: Arial, Helvetica, sans-serif}
         h1#remy {color:indianred}
         p#joddy {color:lightseagreen; text-decoration: underline; }
         p.web {border:3px yellowgreen solid; border-radius: 10px }
-        p.blue-border {border-color: navy; border-width: 4px; border-style: solid}
-    /* p web will only turen paragraphs with class web to that style  */
-    
+        p.blue-border {border-color: navy; border-width: 4px; border-style: solid} */
+
+        div {
+            color: blue
+        }
+
+        span#reason {
+            color: red;
+            font-size: 30px
+        }
+
+        div#square {
+            width: 100px;
+            length: 100px;
+            background-color: thistle;
+            float: left;
+            margin-right: 10px;
+        }
+
+
+        /* p web will only turen paragraphs with class web to that style  */
     </style>
 </head>
 <!-- to make a comment use control and slash -->
+
 <body>
-    <h1 id="remy">there is no school today</h1>
-    <p id="joddy">reason:snow day</p>
-    <p class="web">reason:snow day</p>
-    <p class="web">reason:snow day</p>
+    <div>
+        <h1 id="remy">there is no school today</h1>
+        <p id="joddy">reason:snow day</p>
+        <p class="web">reason:snow day</p>
+        <p><span id="reason">reason</span>:snow day</p>
+    </div>
 
     <h1>there is no school today</h1>
-<!-- this would be a different paragraph -->
+    <!-- this would be a different paragraph -->
     <p>reason:snow day</p>
     <p class="blue-border">reason:snow day</p>
     <p class="web blue-border">reason:snow day</p>
 
+    <a href="low.html">List of Work</a>
+
+    <div id="square">
+    </div>
 </body>
 
 </html>
