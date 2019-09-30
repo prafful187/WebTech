@@ -10,7 +10,7 @@ img { width: 100%;background-color: aqua;}
 
 #lastcol {width:30%; background-color: blue;}
 
-.lastrow {width: 35%;background-color:pink;}
+.lastrow {width: 35%;background-color:pink; position: fixed; pos}
 
 th {background-color: greenyellow; }
 
