@@ -1,0 +1,25 @@
+table{
+   width:500px ;
+   border: 1px solid black ;
+}
+tr,td {border: 1px solid black; padding: 3px;}
+
+#image {width: 70%; background-color: aqua;}
+
+img { width: 100%;background-color: aqua;}
+
+#lastcol {width:30%; background-color: blue;}
+
+.lastrow {width: 35%;background-color:pink;}
+
+th {background-color: greenyellow; }
+
+body {background-image: url(../Images/Forest.jpg); }
+
+p.scroll {
+    background-color: lime;
+    width: 250px;
+    height:300px;
+    overflow: scroll;
+    margin: auto;
+}
