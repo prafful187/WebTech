@@ -39,18 +39,45 @@
         function c() {
             alert("haha");
         }
+
+        function c() {
+            // let remy = document.getElementById("kathy");
+            // remy.style.color = "blue";
+            // // alert(window.location.origin)
+            // let i = document.getElementById("imgB")
+            // i.src = "Images/France.png"
+
+            let x = 2019;
+            let y = 10;
+            let result = x + y;
+
+            let d = Date();
+            // alert("The result is" + result + ". Today is " + d);
+            let jason = document.getElementById("jordon")
+
+            jason.innerHTML = "Jason Says now it is " + d;
+        }
+
+        function changeBackgroundColor() {
+            const bgColors = ["white", "black"];
+            let n = bgColors.length;
+            let randIndex = Math.floor(Math.random() * n);
+            let b = document.getElementById("kathy");
+            b.style.backgroundColor = bgColors[randIndex];
+        }
     </script>
 </head>
 
 <body id="bodyA">
     <hr />
-    <h1 onclick="changeBackgroundColor()">Don't Look - I am Changing</h1>
+    <h1 id="jordon" onclick="changeBackgroundColor()">Don't Look - I am Changing</h1>
     <hr />
     <img id="imgB" src="Images/man.png" alt="man" style="width:30px" onmouseover="enlargeImage()" />
     <p>
         <button onclick="c()">I dare you to click on me!</button>
     </p>
     <hr />
+    <h1 id="kathy" onclick="changeBackgroundColor()"> The second heading</h1>
 </body>
 
 </html>
