@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    background-image: url(Images/beaver.jpg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+table {
+    border: black solid 3px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 11%;
+    position: relative;
+    background-color: silver;
+}
+
+tr,
+td {
+    border: black solid 2px;
+}
+
+#Cap {
+    font-size: 3em;
+    color: white;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    text-align: "center";
+}
+
+td.image {
+    height: 150px;
+    width: 150px;
+    text-align: "center";
+}
+
+#R1 {
+    text-align: center;
+}
+
+#R4 {
+    text-align: center;
+    background-color: white;
+}
+
+#oopsbutton {
+    background-color: red;
+}
+
+textarea {
+    background-color: yellow;
+}
+
+#r6buttons {
+    text-align: center;
+}
+
+#spacingbr {
+    height: 50px;
+}

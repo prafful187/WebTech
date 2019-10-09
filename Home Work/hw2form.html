@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="hw2form.css" type="text/css" />
+</head>
+
+<body>
+    <form action="mailto:pjain4@babson.edu" method="POST">
+        <table>
+
+            <caption id="Cap">Soap Survey</caption>
+            <br id="spacingbr">
+
+            <tr id="R1">
+                <td>Soap Image</td>
+                <td>Soap Color <br>Preference</td>
+                <td>Soap Purchase <br>Intent</td>
+                <td>Soap Features Liked</td>
+            </tr>
+
+            <tr>
+
+                <td class="image"><img src="Images/soap-2.jpg" alt="Soap Image"></td>
+                <td class="radio">
+                    <input type="radio" value="Green" name="color" /> Green <br>
+                    <input type="radio" value="Gold" name="color" /> Gold (shown) <br>
+                    <input type="radio" value="Red" name="color" /> Red
+                </td>
+
+                <td>
+                    At $5.00/unit <br>
+                    <select name="Intent">
+                                <option value="5">Definitley Buy</option>
+                                <option value="4">Likely Buy</option>
+                                <option value="3">Undecided</option>
+                                <option value="2">Unlikely Buy</option>
+                                <option value="1">Not Buy</option>
+                            </select>
+                </td>
+
+                <td>
+                    <p>
+                        <input type="checkbox" name="Feature" value="Shape">Shape <br>
+                        <input type="checkbox" name="Feature" value="Size">Size <br>
+                        <input type="checkbox" name="Feature" value="Smell">Smell <br>
+                        <input type="checkbox" name="Feature" value="Texture">Texture
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="Image"><img src="Images/soap-1.jpg" alt="Soap Image"></td>
+                <td class="radio">
+                    <input type="radio" value="Green" name="color" /> Ivory <br>
+                    <input type="radio" value="Gold" name="color" /> Sandal Wood (shown) <br>
+                    <input type="radio" value="Red" name="color" /> Pink
+                </td>
+
+                <td>
+                    At $8.00/unit <br>
+                    <select name="Intent">
+                                <option value="5">Definitley Buy</option>
+                                <option value="4">Likely Buy</option>
+                                <option value="3">Undecided</option>
+                                <option value="2">Unlikely Buy</option>
+                                <option value="1">Not Buy</option>
+                            </select>
+                </td>
+
+                <td>
+                    <p>
+                        <input type="checkbox" name="Feature" value="Shape">Shape <br>
+                        <input type="checkbox" name="Feature" value="Size">Size <br>
+                        <input type="checkbox" name="Feature" value="Smell">Smell <br>
+                        <input type="checkbox" name="Feature" value="Texture">Texture
+                    </p>
+                </td>
+            </tr>
+
+            <tr id="R4">
+                <td colspan="4">Tell Us About Yourself...</td>
+            </tr>
+
+            <tr>
+                <td>
+                    Gender: <select name="">
+                                <option value="0">Male</option>
+                                <option value="1">Female</option>
+                            </select>
+                </td>
+
+                <div>
+                    <td colspan="3">
+                        Age: (under 25 enter 1,25-40 enter 2, else enter 3) <textarea name="Age" width="5px" maxlength="3"></textarea>
+                    </td>
+                </div>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    Your Comments Are Welcome:
+                    <textarea name="Comments" cols="50" rows="5"></textarea>
+                </td>
+
+                <td id="r6buttons" colspan="2">
+                    <button type="submit" name="Done" value="Done">Done</button>
+                    <input id="oopsbutton" type="reset" value="Oops" name="Oops" />
+                </td>
+            </tr>
+
+
+        </table>
+    </form>
+    <div>
+
+    </div>
+
+</body>
+
+</html>
