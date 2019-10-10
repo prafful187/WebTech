@@ -1,0 +1,171 @@
+li {
+    float: left;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#glass {
+    width: 10px;
+}
+
+#logo {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+
+/* __________________________________________________ROW1______________________ */
+
+ul#row1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: silver;
+}
+
+li#R1 {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a#ROW1 {
+    display: block;
+    color: black;
+    padding: 4px 4px;
+    text-decoration: none;
+    font-family: Helvetica;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* __________________________________________________ROW2______________________ */
+
+ul#row2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: silver;
+}
+
+li.R2 {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a.ROW2 {
+    display: block;
+    color: black;
+    padding: 4px 4px;
+    text-decoration: none;
+    font-family: Helvetica;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* __________________________________________________ROW3______________________ */
+
+ul#row3 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+}
+
+li.R3 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a.ROW3 {
+    display: block;
+    color: black;
+    padding: 4px 4px;
+    text-decoration: none;
+    font-family: Helvetica;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* __________________________________________________ROW4______________________ */
+
+ul#row4 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+}
+
+li.R4 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a.ROW4 {
+    display: block;
+    color: black;
+    padding: 4px 4px;
+    text-decoration: none;
+    font-family: Helvetica;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* __________________________________________________ROW5______________________ */
+
+ul#row5 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+}
+
+li.R5 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a.ROW5 {
+    display: block;
+    color: black;
+    padding: 4px 4px;
+    text-decoration: none;
+    font-family: Helvetica;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* __________________________________________________ROW END______________________ */

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Assignment 2</title>
+    <title>part 1:table</title>
 </head>
 
 <body>
@@ -38,19 +38,15 @@
             color: navy;
         }
         
-        tr#rowone {
-            font-style: bold;
+        #rowone {
             text-align: center;
             background-color: white;
             font-style: italic;
-            border-style: solid;
-            border-color: black;
-            border-width: 100px;
-            border-collapse: separate;
+            font-style: bold;
         }
         
         #rowtwo {
-            font-style: italic bold;
+            font-style: bold;
             text-align: center;
             border: solid black 2px;
             background-color: yellow;
@@ -69,6 +65,18 @@
             width: 200;
             text-align: center;
         }
+        
+        #R4 {
+            width: 200px;
+        }
+        
+        h1 {
+            text-align: center;
+            background-color: white;
+            font-style: italic;
+            font-style: bold;
+            font-size: 15px;
+        }
     </style>
 </body>
 
@@ -76,9 +84,11 @@
     <div>
         <table>
             <caption>Exclusive Gifts for all Occasions</caption>
-            <tr id="rowone">
-                <th colspan="4">This is an exclusive vase from the ming dynasty. <br> It is availabe in two sizes, with and without gold plating.
-                </th>
+            <tr>
+                <td colspan="4" id="rowone">
+                    <h1> This is an exclusive vase from the ming dynasty. <br> It is availabe in two sizes, with and without gold plating.
+                    </h1>
+                </td>
             </tr>
 
             <tr id="rowtwo">
@@ -89,7 +99,7 @@
             </tr>
 
             <tr>
-                <td rowspan="4"><img src="Images/ming.jpg" alt="ming_vase"></td>
+                <td rowspan="4" id="R4"><img src="Images/ming.jpg" alt="ming_vase"></td>
                 <td class="notgold" rowspan="2">Small</td>
                 <td class="notgold">Without Plating</td>
                 <td class="notgold">$65.00</td>

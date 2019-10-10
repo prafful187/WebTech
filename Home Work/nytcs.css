@@ -1,0 +1,59 @@
+<style>ul {
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 4px 4px;
+    text-decoration: none;
+    font-family: Helvetica;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#row2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+}
+
+#row3 {
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+}
+
+#date {
+    text-align: left;
+}
+
+#logo {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#paper {
+    text-align: right;
+}
+
+hr {
+    height: 3px;
+    background-color: gray;
+}
+
+</style>

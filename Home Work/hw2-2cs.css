@@ -18,23 +18,21 @@ table {
 tr,
 td {
     border: black solid 2px;
+    width: 175px;
 }
 
 #Cap {
     font-size: 3em;
     color: white;
+    margin-bottom: 30px;
 }
 
 img {
     height: 150px;
     width: 150px;
     text-align: "center";
-}
-
-td.image {
-    height: 150px;
-    width: 150px;
-    text-align: "center";
+    margin-right: 0;
+    margin-left: auto;
 }
 
 #R1 {
@@ -58,6 +56,23 @@ textarea {
     text-align: center;
 }
 
-#spacingbr {
-    height: 50px;
+td.radio {
+    text-align: left;
 }
+
+
+/* td.image {
+    height: 150px;
+    width: 150px;
+    text-align: "center";
+    margin-right: auto;
+    margin-left: auto;
+    align: center;
+}
+
+tr.image {
+    height: 150px;
+    width: 150px;
+    text-align: "center";
+    margin-right: auto;
+    margin-left: auto; */

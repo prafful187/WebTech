@@ -58,12 +58,12 @@
             jason.innerHTML = "Jason Says now it is " + d;
         }
 
-        function changeBackgroundColor() {
+        function h2() {
             const bgColors = ["white", "black"];
-            let n = bgColors.length;
-            let randIndex = Math.floor(Math.random() * n);
-            let b = document.getElementById("kathy");
-            b.style.backgroundColor = bgColors[randIndex];
+            let cc = bgColors.length;
+            let randIndex = Math.floor(Math.random() * cc);
+            let kathy = document.getElementById("kathy");
+            kathy.style.backgroundColor = bgColors[randIndex];
         }
     </script>
 </head>
@@ -77,7 +77,7 @@
         <button onclick="c()">I dare you to click on me!</button>
     </p>
     <hr />
-    <h1 id="kathy" onclick="changeBackgroundColor()"> The second heading</h1>
+    <h2 id="kathy" onclick="changeBackgroundColor()"> The second heading</h2>
 </body>
 
 </html>
