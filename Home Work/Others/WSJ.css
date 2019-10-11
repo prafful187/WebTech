@@ -2,10 +2,6 @@ li {
     float: left;
 }
 
-li a:hover {
-    background-color: #111;
-}
-
 #glass {
     width: 10px;
 }
@@ -32,8 +28,9 @@ li#R1 {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1px;
     text-decoration: none;
+    font-size: 5px;
 }
 
 a#ROW1 {
@@ -47,6 +44,10 @@ a#ROW1 {
     margin-left: auto;
 }
 
+a#ROW1:hover {
+    background-color: blue;
+}
+
 
 /* __________________________________________________ROW2______________________ */
 
@@ -55,12 +56,12 @@ ul#row2 {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: silver;
+    background-color: Black;
 }
 
 li.R2 {
     display: block;
-    color: blue;
+    color: White;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -68,7 +69,7 @@ li.R2 {
 
 a.ROW2 {
     display: block;
-    color: black;
+    color: white;
     padding: 4px 4px;
     text-decoration: none;
     font-family: Helvetica;
@@ -85,12 +86,12 @@ ul#row3 {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: red;
+    background-color: white;
 }
 
 li.R3 {
     display: block;
-    color: white;
+    color: gray;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -98,7 +99,7 @@ li.R3 {
 
 a.ROW3 {
     display: block;
-    color: black;
+    color: gray;
     padding: 4px 4px;
     text-decoration: none;
     font-family: Helvetica;
@@ -115,12 +116,12 @@ ul#row4 {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: blue;
+    background-color: white;
 }
 
 li.R4 {
     display: block;
-    color: white;
+    color: gray;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -128,7 +129,7 @@ li.R4 {
 
 a.ROW4 {
     display: block;
-    color: black;
+    color: gray;
     padding: 4px 4px;
     text-decoration: none;
     font-family: Helvetica;
@@ -145,12 +146,12 @@ ul#row5 {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: blue;
+    background-color: white;
 }
 
 li.R5 {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -165,6 +166,14 @@ a.ROW5 {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+}
+
+a.ROW5:hover {
+    color: red;
+}
+
+li.R5:hover {
+    color: red;
 }
 
 
