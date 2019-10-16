@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>CS12-InClass</title>
+
+
+
+    <style type="text/css">
+        /* Your styles go here */
+        
+        body {
+            text-align: center;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function enlargeImage(imageId) {
+            let i = document.getElementById(imageId);
+            console.log(i.width);
+            let w = i.width;
+            w = w * 1.5;
+            // console.log(w);
+            // console.log("current width:",i.width);
+            i.width = w;
+
+        }
+
+        function shortenImage(imageId) {
+            let i = document.getElementById(imageId);
+            console.log(i.width);
+            let w = i.width;
+            w = w / 1.5;
+            // console.log(w);
+            // console.log("current width:",i.width);
+            i.width = w;
+
+        }
+    </script>
+
+
+</head>
+
+
+
+<body>
+
+    <h2>Manipulating Styles and Images</h2>
+
+    <p>
+        <img onmouseover="enlargeImage(this.id)" onmouseout="shortenImage(this.id)" id="usa" src="Images/usa.png" alt="Image goes here" title="map of USA" width="400" />
+    </p>
+    <hr>
+    <p>
+        <img onmouseover="enlargeImage(this.id)" onmouseout="shortenImage(this.id)" id="tiger" src="Images/tiger1.jpg" alt="tiger" title="tiger" width="400" />
+    </p>
+    <hr>
+    <p>
+        <img onmouseover="enlargeImage(this.id)" onmouseout="shortenImage(this.id)" id="france" src="Images/France.png" alt="France" title="France" width="400" />
+    </p>
+
+
+
+    <hr />
+
+</body>
+
+</html>

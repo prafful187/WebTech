@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Demo</title>
+    <style>
+        p {
+            width: 60%;
+            margin: 10px auto;
+        }
+    </style>
+    <script type="text/javascript">
+        function calculate() {
+            let x = document.getElementById("x").innerHTML;
+            x = parseInt(x);
+            let y = document.getElementById("y").innerHTML;
+            y = parseInt(y);
+            let result = x + y;
+            let r = document.getElementById("result");
+            r.innerHTML = result;
+            r.style.backgroundColor = "pink";
+            let last = document.getElementById("last");
+            last.innerHTML = x % 10;
+            // alert(x);
+            // console.log(x); both for testing to see what current element is
+        }
+    </script>
+</head>
+
+<body>
+    <p>
+        x = <span id="x">2019</span>
+    </p>
+    <p>
+        y = <span id="y">1016</span>
+    </p>
+    <p>
+        The sum is <span id="result">?</span>
+    </p>
+    <p>
+        the last digit of x is <span id="last">?</span>
+    </p>
+    <p>
+        <button onclick="calculate()">Click Me</button>
+    </p>
+</body>
+
+</html>
