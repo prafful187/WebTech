@@ -33,23 +33,27 @@
             vertical-align: middle;
         }
     </style>
-    <script type="text/javascript">
-        function click(imageId)
-        let i = document.getElementById("Smiley").innerHTML;
-        let r = document.getElementById("rocks").innerHTML;
-        Object.onclick = function()
-        r.style.backgroundColor = "yellow";
-        r.style.color = "Red";
-        r.style.fontSize = "2em";
-        r.style.fontFamily = "Lucidia Handwriting";
 
-        function click(imageId)
-        let i = document.getElementById("Frown").innerHTML;
-        let r = document.getElementById("sucks").innerHTML;
-        r.style.backgroundColor = "yellow";
-        r.style.color = "Green";
-        r.style.fontSize = "2em";
-        r.style.fontFamily = "Arial";
+    <script type="text/javascript">
+        function clicksmiley() {
+            let r = document.getElementById("rocks");
+            r.style.backgroundColor = "yellow";
+            r.style.color = "Red";
+            r.style.fontSize = "2em";
+            r.style.fontFamily = "Lucidia Handwriting";
+            let z = document.getElementById("sucks");
+            z.style.display = "none";
+        }
+
+        function clickfrown() {
+            let s = document.getElementById("sucks");
+            s.style.backgroundColor = "yellow";
+            s.style.color = "Green";
+            s.style.fontSize = "2em";
+            s.style.fontFamily = "Arial";
+            let x = document.getElementById("rocks");
+            x.style.display = "none";
+        }
     </script>
 </head>
 
@@ -60,13 +64,11 @@
         you click on frown.jpg image, the string "Web Tech Sucks" is shown in green font, bold, size 2em, and using Arial. When one text string is shown, the other should not be displayed. Use as many functions as you see necessary to complete this functionality.
     </p>
     <div>
-        <button>
-        <img id="Smiley" onclick="click(this.Id)" alt="Smiling Face" src="Images/smiley.jpg" title="Smile" /></button>
+        <img onclick="clicksmiley()" alt="Smiling Face" src="Images/smiley.jpg" title="Smile" />
         <span id="rocks">Web Tech Rocks!</span>
     </div>
     <div>
-        <button>
-        <img id="Frown" onclick="click(this.Id)" alt="Frown Face" src="Images/frown.jpg" title="Sad" /></button>
+        <img onclick="clickfrown()" alt="Frown Face" src="Images/frown.jpg" title="Sad" />
         <span id="sucks">Web Tech Sucks!</span>
     </div>
 </body>
