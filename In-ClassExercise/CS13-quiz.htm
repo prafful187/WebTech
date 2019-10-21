@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>JavaScript Quiz</title>
+    <style type="text/css">
+        h1 {
+            text-align: center;
+            font-family: Arial;
+            color: Navy;
+        }
+        
+        p {
+            margin-left: 300px;
+            margin-right: 300px;
+            font-size: 14pt;
+        }
+        
+        div {
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+        
+        img {
+            width: 20%;
+            vertical-align: middle;
+        }
+        
+        span {
+            vertical-align: middle;
+        }
+    </style>
+    <script type="text/javascript">
+        function click(imageId)
+        let i = document.getElementById("Smiley").innerHTML;
+        let r = document.getElementById("rocks").innerHTML;
+        Object.onclick = function()
+        r.style.backgroundColor = "yellow";
+        r.style.color = "Red";
+        r.style.fontSize = "2em";
+        r.style.fontFamily = "Lucidia Handwriting";
+
+        function click(imageId)
+        let i = document.getElementById("Frown").innerHTML;
+        let r = document.getElementById("sucks").innerHTML;
+        r.style.backgroundColor = "yellow";
+        r.style.color = "Green";
+        r.style.fontSize = "2em";
+        r.style.fontFamily = "Arial";
+    </script>
+</head>
+
+<body>
+    <h1>Reflect the Image</h1>
+    <p>
+        There are two images shown below along with two text strings. Create the functionality whereby if you click on the Smiley.jpg image, the text string "Web Tech Rocks" is shown in red font, size 2em, using Lucida Handwriting with a yellow background. If
+        you click on frown.jpg image, the string "Web Tech Sucks" is shown in green font, bold, size 2em, and using Arial. When one text string is shown, the other should not be displayed. Use as many functions as you see necessary to complete this functionality.
+    </p>
+    <div>
+        <button>
+        <img id="Smiley" onclick="click(this.Id)" alt="Smiling Face" src="Images/smiley.jpg" title="Smile" /></button>
+        <span id="rocks">Web Tech Rocks!</span>
+    </div>
+    <div>
+        <button>
+        <img id="Frown" onclick="click(this.Id)" alt="Frown Face" src="Images/frown.jpg" title="Sad" /></button>
+        <span id="sucks">Web Tech Sucks!</span>
+    </div>
+</body>
+
+</html>
