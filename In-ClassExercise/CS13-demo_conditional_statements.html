@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conditional Statements Demo</title>
+</head>
+
+<body>
+    <h1>Conditional statments Demo</h1>
+    <button onclick="ask()">Click Me</button>
+    <p>you just entered <span id="user-input"></span></p>
+    <p>Result: <span id="result"></span></p>
+
+    <script>
+        function ask() {
+            // // alert("test");
+            // // consol.log("test");
+            // let message = prompt("What day of the week is it Today?");
+            // // consol.log(message);
+            // let userInput = document.getElementById("user-input");
+            // userInput.innerHTML = "<i>" + message + "</i>";
+
+            // let name = prompt("what is your name?");
+            // userInput.innerHTML += "," + "<i>" + name + "</i>";
+            // let result = document.getElementById("result");
+            // if (message == "monday" && name == "Jain") {
+            //     result.innerHTML = "correct!";
+            // } else {
+            //     result.innerHTML = "wrong!";
+            // }
+
+            let gender = prompt("what is your gender?");
+            let userInput = document.getElementById("user-input");
+            userInput.innerHTML = "<i>" + gender + "</i>";
+
+            let result = document.getElementById("result");
+
+            if (gender.toLowerCase == "male" || gender.toLowerCase == "man") {
+                result.innerHTML = "Hello, Sir!";
+                document.getElementById("img-result").src = "Images/tiger1.jpg";
+            } else if (gender.toLowerCase == "male" || gender.toLowerCase == "man") {
+                result.innerHTML = "Hello, Madam!";
+                document.getElementById("img-result").src = "Images/France.png";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

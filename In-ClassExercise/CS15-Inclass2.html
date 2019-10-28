@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>CS15-InClass2 - Temperature Converter</title>
+    <style type="text/css">
+        form {
+            font-family: Arial;
+            font-weight: bold;
+            padding: 60px;
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: Silver;
+        }
+        
+        h1 {
+            font-family: Arial;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        div#d1 {
+            margin-bottom: 40px;
+        }
+    </style>
+    <script>
+        function ConvertCtoF() {
+            let Converter = document.getElementById("form1");
+            let Celsius = Converter.cel.value;
+            let Fahrenheit = Converter.far.value;
+            parseFloat(Celsius);
+            parseFloat(Fahrenheit);
+            Fahrenheit = (Celsius * 1.8) + 32;
+            Converter.far.value = Fahrenheit;
+            if (isNaN(Celsius) || isNaN(Fahrenheit)) {
+                alert("Please Enter A Number")
+            }
+            return false;
+
+        }
+
+        function ConvertFtoC() {
+            let Converter = document.getElementById("form1");
+            let Celsius = Converter.cel.value;
+            let Fahrenheit = Converter.far.value;
+            parseFloat(Celsius);
+            parseFloat(Fahrenheit);
+            // Fahrenheit = Celsius * 1.8 + 32;
+            Celsius = (Fahrenheit - 32) / 1.8;
+            // Converter.far.value = Fahrenheit;
+            Converter.cel.value = Celsius;
+            console.log(Celsius);
+            console.log(Fahrenheit);
+
+            if (isNaN(Celsius) || isNaN(Fahrenheit)) {
+                alert("Please Enter A Number")
+            }
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Your HTML goes here -->
+    <h1>Celsius Fahrenheit Converter</h1>
+    <form action="" method="post" id="form1">
+        <div id="d1">
+            <label>Celsius:</label>
+            <input name="cel" size="10" type="text" />
+            <label>Fahrenheit:</label>
+            <input name="far" size="10" type="text" />
+        </div>
+        <div>
+            <input name="submit" type="submit" value="Convert" onclick="return ConvertCtoF()" />
+            <input name="reset" type="reset" value="Clear" />
+        </div>
+    </form>
+</body>
+
+</html>
