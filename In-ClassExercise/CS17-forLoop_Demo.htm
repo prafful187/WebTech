@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>forLoop Demo</title>
+
+    <script>
+        function calculate() {
+
+            // For all numbers in the array 
+            let numberArray = [2019, 11, 4, 1, 18];
+            let sum = 0;
+
+            for (let i = 0; i < numberArray.length; i++) {
+                console.log(numberArray[i]);
+                sum = sum + numberArray[i];
+                console.log("After Iteration" + i + "the sum is" + sum);
+                console.log(" ");
+            }
+            // For all Numbers from 1-100
+            let sum = 0;
+
+            for (let i = 0; i < 101; i++) {
+                sum = sum + i;
+                console.log("After Iteration" + i + "the sum is" + sum);
+            }
+
+            // For all even integers from 1-100
+            let sum = 0;
+
+            for (let i = 0; i < 101; i = i + 2) {
+                sum = sum + i;
+                console.log("After Iteration" + i + "the sum is" + sum);
+            }
+
+            // For all odd integers from 1-100
+            let sum = 0;
+
+            for (let i = 1; i < 101; i = i + 2) {
+                sum = sum + i;
+                console.log("After Iteration" + i + "the sum is" + sum);
+            }
+
+            // For sum of all odd integers from 1-51
+
+            for (let i = 1; i < 51; i++) {
+                sum = sum + 2 * i;
+                console.log("After Iteration" + i + "the sum current is" + sum);
+            }
+
+            // Sum all even integers from 1-100(modulus-remainder after division )
+
+            for (let i = 0; i < 101; i++) {
+                if (i % 2 == 0)
+                    sum += i;
+                console.log(i + " is an Enven Number. The sum current is" + sum);
+            }
+
+
+            document.getElementById("result").innerHTML = sum;
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>For Loop Demo</h1>
+    <button onclick="calculate()">Calculate</button>
+    <p id="result"></p>
+</body>
+
+</html>
