@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>CS17 Quiz-1: Calculate the sum of squares</title>
+    <style type="text/css">
+        form {
+            font-weight: bold;
+            padding: 50px;
+            width: 70%;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: Silver;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        #question {
+            font-size: large;
+            width: 70%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+    <Script>
+        function calculate() {
+            let myform = document.getElementById("form1");
+            var sum = [];
+            var integer1 = myform.from.value;
+            var integer2 = myform.to.value;
+            let totalsum = 0;
+
+            for (i = integer1; i < integer2; i++) {
+                totalsum = totalsum + sum[i] * sum[i];
+            }
+
+            document.getElementById("result").innerHTML = totalsum;
+
+        }
+    </Script>
+</head>
+
+<body>
+    <h1> Yet Another Simple Calculator</h1>
+    <p id="question"> Please use <b>for</b> loop to sum up <strong>squares</strong> all the integers between these two numbers (inclusive). You can don't have to validate inputs; in other words, you can assume both inputs are integers (you still need to convert) and the
+        first number is less than the second.</p>
+    <form action="" method="post" id="form1">
+        <p id="p1">
+            <label>From:
+        <input name="from" size="10" type="text"/>
+      </label>
+            <label>To:
+        <input name="to" size="10" type="text"/>
+      </label>
+        </p>
+        <p>
+            <input onclick="calculate()" name="Sum" type="button" value="Sum" />
+            <input name="reset" type="reset" value="Clear" />
+        </p>
+        <p>The sum of squares is <span id="result">?</span>.</p>
+    </form>
+</body>
+
+</html>

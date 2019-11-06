@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>CS17 Quiz-2: Simple Investment Calculator</title>
+    <style type="text/css">
+        form {
+            font-weight: bold;
+            padding: 20px;
+            width: 70%;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: Silver;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        #question {
+            font-size: large;
+            width: 70%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+    <script>
+        function run() {
+            let myform = document.getElementById("form1")
+            let year = myform.y.value;
+            let value = myform.v.value;
+
+            let value = 100;
+
+            for (let i = 0; i < 16; i++) {
+                value = value * 1.05;
+                year = year + i;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Value of a $100 Investment at 5% Interest in 15 years</h1>
+    <p id="question">Write a function so that clicking the Run button will start an animation that changes the data in the form every second. Every second the year should increase by 1 and the value should be multiplied by 1.05. After 2034, the (next) year should be reset
+        to 2019 and (next) value should be reset to 100. </p>
+    <form action="" method="post" id="form1">
+        <p>
+            <label>Year:
+        <input name="y" readonly type="text" value="2019"/>
+      </label>
+        </p>
+        <p>
+            <label>Value:
+        <input name="v" readonly type="text" value="100"/>
+      </label>
+        </p>
+        <p>
+            <button onclick="run()">Run</button>
+        </p>
+    </form>
+</body>
+
+</html>
