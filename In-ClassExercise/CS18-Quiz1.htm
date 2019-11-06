@@ -34,13 +34,12 @@
     <Script>
         function calculate() {
             let myform = document.getElementById("form1");
-            var sum = [];
-            var integer1 = myform.from.value;
-            var integer2 = myform.to.value;
+            let integer1 = myform.from.value;
+            let integer2 = myform.to.value;
             let totalsum = 0;
 
             for (i = integer1; i < integer2; i++) {
-                totalsum = totalsum + sum[i] * sum[i];
+                totalsum = totalsum + i * i;
             }
 
             document.getElementById("result").innerHTML = totalsum;
