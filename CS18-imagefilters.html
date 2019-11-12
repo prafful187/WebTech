@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>Image Processing using CSS</title>
+    <style>
+        img#after {
+            -webkit-filter: grayscale(100%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="In-ClassExercise/Images/tiger1.jpg" alt="image before filter" width="300" />
+    <p>Convert the image to grayscale:</p>
+    <img src="In-ClassExercise/Images/tiger1.jpg" alt="image after filter" width="300" id="after" />
+
+    <p>
+        <strong>Note:</strong> The filter property is not supported in Internet Explorer, Edge 12, or Safari 5.1 and earlier.
+    </p>
+</body>
+
+</html>
